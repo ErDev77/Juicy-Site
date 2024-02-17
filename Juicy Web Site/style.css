@@ -1,0 +1,263 @@
+*{margin: 0; padding: 0; box-sizing: border-box;font-family: sans-serif;}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 1385px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    left: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    width: 127px;
+    height: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    width: 554px;
+    height: 23px;
+}
+
+nav ul  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.login {
+    width: 176px;
+    height: 23px;
+}
+
+.login ul {
+    width: 176px;
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login ul li {
+    list-style-type: none;
+    color: white;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    top: 70px;
+    z-index: 10;
+}
+
+.title1 {
+    background-image: url(img/pear.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    left: 10%;
+    transition: 2s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.title2 {
+    background-image: url(img/apple.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    left: 10%;
+    transition: 2s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.title3 {
+    background-image: url(img/Exotic.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 80%;
+    height: 500px;
+    position: absolute;
+    left: 10%;
+    transition: 2s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+
+.pear {
+    background-image: url(img/pears.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90%;
+    height: 100%;
+    filter: blur(2px);
+    position: absolute;
+    left: 5%;
+    transition: 2s;
+    top: 0;
+}
+
+.cans{
+    width: 270px;
+    height: 500px;
+    position: relative;
+    left: 40%;
+    top: 5%;
+    z-index: 20;
+    overflow: hidden;
+    transform: rotateY(0deg);
+    transition: 2s;
+}
+
+.can-pear {
+    background-image: url(img/Can.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 270px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    transition: 2s;
+    opacity: 1;
+    
+}
+
+.can-apple {
+    background-image: url(img/Can2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 270px;
+    height: 500px;
+    position: absolute;
+    top: -100%;
+    z-index: 20;
+    transition: 2s;
+    opacity: 0;
+}
+
+.can-exotic {
+    background-image: url(img/Can3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 270px;
+    height: 500px;
+    position: absolute;
+    top: -200%;
+    z-index: 20;
+    transition: 2s;
+    opacity: 0;
+}
+
+
+.leaf1 {
+    background-image: url(img/leaf.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 35%;
+    top: 0;
+    transform: rotate(-110deg);
+    transition: 1s;
+}
+
+.leaf2 {
+    background-image: url(img/leaf.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 55%;
+    top: 75%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.apple {
+    background-image: url(img/Apples.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90%;
+    height: 100%;
+    filter: blur(1px);
+    position: absolute;
+    left: -150%;
+    transition: 2s;
+}
+
+.marakuia {
+    background-image: url(img/marakuia.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 90%;
+    height: 100%;
+    filter: blur(1px);
+    position: absolute;
+    left: 5%;
+    top: 150%;
+    transition: 2s;
+}
+
+.back{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: 2;
+    position: absolute;
+    transition: 2s;
+}
+
+.back1{
+    background-color: #C9E78A;
+    left: 0;
+}
+.back2{
+    background-color: #FFA3BE;
+    left: 100%;
+}
+.back3{
+    background-color: #C1BEFF;
+    left: 200%;
+}
